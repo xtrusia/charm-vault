@@ -113,7 +113,7 @@ generate-root-ca:
         for CNs, DNS SANs, and the host part of email addresses.
     max-ttl:
       type: string
-      default: '696h'
+      default: '86400h'
       description: >-
         Specifies the maximum Time To Live for generated certificates.
 get-root-ca:

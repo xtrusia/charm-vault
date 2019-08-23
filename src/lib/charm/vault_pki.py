@@ -26,7 +26,9 @@ def configure_pki_backend(client, name, ttl=None):
             description='Charm created PKI backend',
             mount_point=name,
             # Default ttl to 10 years
-            config={'max_lease_ttl': ttl or '87600h'})
+            config={
+                'default_lease_ttl': ttl or '87600h',
+                'max_lease_ttl': ttl or '87600h'})
 
 
 def disable_pki_backend():
